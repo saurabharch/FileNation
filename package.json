@@ -33,7 +33,7 @@
     "@angular/router": "6.1.0",
     "angular-filepond": "1.0.5",
     "buffer": "5.2.0",
-    "core-js": "2.5.7",
+    "core-js": "2.6.11",
     "gsap": "2.0.1",
     "ipfs": "0.31.1",
     "readable-stream": "2.3.6",
