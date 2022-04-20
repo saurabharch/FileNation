@@ -15,7 +15,9 @@
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
     "compodoc:g": "compodoc -p src/tsconfig.app.json",
     "compodoc:s": "compodoc -p src/tsconfig.app.json --serve",
-    "compodoc:w": "compodoc -p src/tsconfig.app.json --serve --watch"
+    "compodoc:w": "compodoc -p src/tsconfig.app.json --serve --watch",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -36,14 +38,15 @@
     "core-js": "2.5.7",
     "filepond-plugin-file-validate-type": "1.2.0",
     "gsap": "2.0.1",
-    "ipfs": "0.34.0",
+    "ipfs": "0.51.0",
     "ngx-filepond": "4.0.0",
     "readable-stream": "3.0.6",
     "rxjs": "6.2.2",
     "rxjs-compat": "6.2.2",
     "stream": "0.0.2",
     "stream-buffers": "3.0.2",
-    "zone.js": "0.8.26"
+    "zone.js": "0.8.26",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.7.4",
@@ -68,5 +71,6 @@
     "tslint": "5.11.0",
     "typescript": "2.9.2",
     "webpack": "4.16.5"
-  }
+  },
+  "snyk": true
 }
